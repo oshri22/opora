@@ -4,9 +4,10 @@
     "port": 3306,
     "username": "root",
     "password": "oshri220904",
-    "database": "",
+    "database": "opera",
     "synchronize": true,
     "logging": false,
+    "migrationsRun": true,
     "entities": [
        "src/entity/**/*.ts"
     ],

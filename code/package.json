@@ -1,24 +1,59 @@
 {
    
    "dependencies": {
-      "@types/dotenv": "^8.2.0",
-      "@types/mysql": "^2.15.21",
-      "dotenv": "^16.0.0",
-      "mysql": "^2.18.1",
-      "typescript": "^4.6.4",
-      "typeorm": "0.3.6",
-      "reflect-metadata": "^0.1.13",
-      "pg": "^8.4.0"
+   
+      
+   "@types/dotenv": "^8.2.0",
+   
+      
+   "@types/mysql": "^2.15.21",
+   
+      
+   "dotenv": "^16.0.0",
+   
+      
+   "mysql": "^2.18.1",
+   
+      
+   "pg": "^8.4.0",
+   
+      
+   "reflect-metadata": "^0.1.13",
+   
+      
+   "typeorm": "0.3.6",
+   
+      
+   "typescript": "^4.6.4"
+   
    },
+   
    "scripts": {
-      "run": "node ./out/index",
-      "build": "npx tsc",
-      "start": "ts-node src/index.ts",
-      "typeorm": "typeorm-ts-node-commonjs"
+   
+      
+   "run": "node ./out/index",
+   
+      
+   "build": "npx tsc",
+   
+      
+   "start": "ts-node src/index.ts",
+   
+      
+   "typeorm": "typeorm-ts-node-commonjs"
+   
    },
+   
    "devDependencies": {
-      "ts-node": "10.7.0",
-      "@types/node": "^16.11.10",
-      "typescript": "4.5.2"
+   
+      
+   "@types/node": "^16.11.10",
+   
+      
+   "ts-node": "10.7.0",
+   
+      
+   "typescript": "4.5.2"
+   
    }
 }
