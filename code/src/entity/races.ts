@@ -1,9 +1,9 @@
-import {Entity, Column, PrimaryGeneratedColumn} from "typeorm";
+import {Entity, Column, PrimaryColumn} from "typeorm";
 
 @Entity()
 export class Races {
 
-    @PrimaryGeneratedColumn()
+    @PrimaryColumn()
     raceId: number
     
     @Column()
@@ -21,10 +21,18 @@ export class Races {
     @Column()
     date: string
     
-    @Column()
+    @Column({
+        type: 'text',
+        nullable: true
+        
+    })
     time: string
     
-    @Column()
+    @Column({
+        type: 'text',
+        nullable: true
+        
+    })
     url: string
 
 }

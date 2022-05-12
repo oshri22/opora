@@ -1,9 +1,9 @@
-import { Entity, Column, PrimaryGeneratedColumn } from "typeorm";
+import { Entity, Column, PrimaryColumn } from "typeorm";
 
 @Entity()
 export class Constructors{
 
-    @PrimaryGeneratedColumn()
+    @PrimaryColumn()
     constructorId: number
 
     @Column()

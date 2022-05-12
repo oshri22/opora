@@ -1,10 +1,10 @@
-import {Entity, Column, PrimaryGeneratedColumn} from "typeorm";
+import {Entity, Column, PrimaryColumn} from "typeorm";
 
 
 @Entity()
 export class Circuits {
     
-    @PrimaryGeneratedColumn()
+    @PrimaryColumn()
     id: number
 
     @Column()

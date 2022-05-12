@@ -1,9 +1,9 @@
-import {Entity, Column, PrimaryGeneratedColumn} from "typeorm";
+import {Entity, Column, PrimaryColumn} from "typeorm";
 
 @Entity()
 export class Driver_standings {
 
-    @PrimaryGeneratedColumn()
+    @PrimaryColumn()
     driverStandingsId: number
 
     @Column()

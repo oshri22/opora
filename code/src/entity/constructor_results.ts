@@ -1,10 +1,10 @@
-import {Entity, Column, PrimaryGeneratedColumn} from "typeorm";
+import {Entity, Column, PrimaryColumn} from "typeorm";
 
 
 @Entity()
 export class Constructor_results {
 
-    @PrimaryGeneratedColumn()
+    @PrimaryColumn()
     constructorResultsId: number
 
     @Column()
@@ -15,5 +15,11 @@ export class Constructor_results {
 
     @Column()
     points: string
+
+    @Column({
+        type: 'text',
+        nullable: true
+    })
+    status: string
 
 }

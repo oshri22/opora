@@ -1,9 +1,9 @@
-import {Entity, Column, PrimaryGeneratedColumn} from "typeorm";
+import {Entity, Column, PrimaryColumn} from "typeorm";
 
 @Entity()
 export class Results {
     
-    @PrimaryGeneratedColumn()
+    @PrimaryColumn()
     resultId: number
     
     @Column()
@@ -15,46 +15,84 @@ export class Results {
     @Column()
     constructorId: number
     
-    @Column()
+    @Column({
+        type: 'int',
+        nullable: true
+    })
     number: number
     
     @Column()
     grid: number
     
-    @Column()
+    @Column({
+        type:'text',
+        nullable: true
+    })
     position: number
     
-    @Column()
+    @Column({
+        type: 'text',
+        nullable: true
+    })
     positionText: string
     
-    @Column()
+    @Column({
+        type: 'int',
+        nullable: true
+    })
     positionOrder: number
     
-    @Column()
-    points: number
+    @Column({
+        type: 'text',
+        nullable: true
+    })
+    points: string
     
     @Column()
-    laps: number
+    laps: string
     
-    @Column()
+    @Column({
+        type: 'text',
+        nullable: true
+        
+    })
     time: string
     
-    @Column()
+    @Column({
+        type: 'text',
+        nullable: true
+        
+    })
     milliseconds: number
     
-    @Column()
+    @Column({
+        type: 'text',
+        nullable: true
+         
+    })
     fastestLap: number
     
-    @Column()
+    @Column({
+        type: 'text',
+        nullable: true  
+    })
     rank: number
     
-    @Column()
+    @Column({
+        type: 'text',
+        nullable: true
+    })
     fastestLapTime: string
     
-    @Column()
+    @Column({
+        nullable: true
+    })
     fastestLapSpeed: string
     
-    @Column()
+    @Column({
+        type: 'text',
+        nullable: true
+    })
     statusId: number
         
 }

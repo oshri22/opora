@@ -1,31 +1,59 @@
-import {Entity, Column, PrimaryGeneratedColumn} from "typeorm";
+import {Entity, Column, PrimaryColumn} from "typeorm";
 
 @Entity()
 export class Drivers{ 
-    @PrimaryGeneratedColumn()
+    @PrimaryColumn()
     driverId: number
 
     @Column()
     driverRef: string
 
-    @Column()
+    @Column({
+        type: 'int',
+        nullable: true
+        
+    })
     number: number
 
-    @Column()
+    @Column({
+        type: 'text',
+        nullable: true
+        
+    })
     code: string
 
-    @Column()
+    @Column({
+        type: 'text',
+        nullable: true
+        
+    })
     forename: string
 
-    @Column()
+    @Column({
+        type: 'text',
+        nullable: true
+        
+    })
     surname: string
 
-    @Column()
+    @Column({
+        type: 'text',
+        nullable: true
+        
+    })
     dob: string
 
-    @Column()
+    @Column({
+        type: 'text',
+        nullable: true
+        
+    })
     nationality: string
 
-    @Column()
+    @Column({
+        type: 'text',
+        nullable: true
+        
+    })
     url: string
 }

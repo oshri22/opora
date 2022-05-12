@@ -1,9 +1,9 @@
-import {Entity, Column, PrimaryGeneratedColumn} from "typeorm";
+import {Entity, Column, PrimaryColumn} from "typeorm";
 
 @Entity()
 export class Qualifying {
 
-    @PrimaryGeneratedColumn()
+    @PrimaryColumn()
     qualifyId: number
     
     @Column()
@@ -21,13 +21,25 @@ export class Qualifying {
     @Column()
     position: number
     
-    @Column()
+    @Column({
+        type: 'text',
+        nullable: true
+        
+    })
     q1: string
     
-    @Column()
+    @Column({
+        type: 'text',
+        nullable: true
+        
+    })
     q2: string
     
-    @Column()
+    @Column({
+        type: 'text',
+        nullable: true
+        
+    })
     q3: string
 
 }

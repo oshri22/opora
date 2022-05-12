@@ -1,9 +1,9 @@
-import {Entity, Column, PrimaryGeneratedColumn} from "typeorm";
+import {Entity, Column, PrimaryColumn} from "typeorm";
 
 @Entity()
 export class Constructor_standings {
     
-    @PrimaryGeneratedColumn()
+    @PrimaryColumn()
     constructorStandingsId: number
 
     @Column()
